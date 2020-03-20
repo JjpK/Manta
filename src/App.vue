@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Manta's World</h1>
+    <h1>Manta's WORLD</h1>
   </div>
 </template>
 
