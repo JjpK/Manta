@@ -4,7 +4,7 @@
   "short_name": "manta",
   "icons": [
     {
-      "src": "./img/icons/favicon-16x16.ico",
+      "src": "./img/icons/favicon-16x16.png",
       "sizes": "16x16",
       "type": "image/x-icon"
     }
