@@ -1,0 +1,16 @@
+
+{
+  "name": "manta",
+  "short_name": "manta",
+  "icons": [
+    {
+      "src": "./img/icons/favicon-16x16.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#4DBA87"
+}

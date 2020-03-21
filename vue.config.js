@@ -5,7 +5,13 @@ const vueConfig = {
   indexPath: 'index.html',
   outputDir: 'dist',
   assetsDir: 'static',
-  publicPath: './'
+  publicPath: './',
+
+  pwa: {
+    name: 'manta',
+    themeColor: '#4D6EBA',
+    msTileColor: '#4D6EBA'
+  }
 }
 
 
