@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <h1>Manta's world</h1>
+    <Index></Index>
   </div>
 </template>
 
 <script>
-
+import Index from '@/pages/index/Index'
 export default {
   name: 'App',
   components: {
-    
+    Index
   }
 }
 </script>
