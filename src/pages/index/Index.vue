@@ -42,7 +42,17 @@
       </div>
     </section>
   </div> -->
-  <h1> Manta's World</h1>
+  <div class="container">
+    <h1 class="title"> Manta's World</h1>
+    <div class="content">
+      <div class="box">
+        <div  v-for="i in listx" :key="i">
+          <span :style="{fontSize: `${i}pt`}" style="marginRight: 20px">{{i}}pt</span>
+          <span :style="{fontSize: `${i}px`}">{{i}}px</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
 // import api from '@/api';
@@ -51,6 +61,7 @@ import { onMounted } from '@vue/composition-api';
 export default {
 components: {},
 setup() {
+  const listx = [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
   const skills = [
     '·	Javascript、HTML5、CSS3基础扎实，业务能力强。',
     '·	熟悉移动端页面开发，有丰富微信公众号页面，小程序开发&适配经验。',
@@ -100,47 +111,60 @@ setup() {
   })
   return {
     list,
-    skills
+    skills,
+    listx
   };
 }
 };
 </script>
-<style lang='scss' scoped>
-.content{
-  color: $maincolor;
-  padding: 20px;
-  text-align: left;
-  section{
-    margin-bottom: 20px;
-    .title{
-      margin-top: 20px;
-      padding: 4px 0;
-      text-align: left;
-      border-bottom: 1px solid $maincolor;
-    }
-    .info{
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      grid-gap: 10px;
-      text-align: left;
-    }
-    .skills{
-      text-align: left;
-      li{
-        margin-bottom: 10px;
-      }
-    }
-    .exprince{
-      display: flex;
-      justify-content: space-between;
-    }
-    .projects{
-      .text{
-        grid-gap: 10px;
-        display: grid;
-        grid-template-columns: 80px auto;
-      }
-    }
-  }
-}
+<style lang='sass' scoped>
+// .content{
+//   color: $maincolor;
+//   padding: 20px;
+//   text-align: left;
+//   section{
+//     margin-bottom: 20px;
+//     .title{
+//       margin-top: 20px;
+//       padding: 4px 0;
+//       text-align: left;
+//       border-bottom: 1px solid $maincolor;
+//     }
+//     .info{
+//       display: grid;
+//       grid-template-columns: repeat(2,1fr);
+//       grid-gap: 10px;
+//       text-align: left;
+//     }
+//     .skills{
+//       text-align: left;
+//       li{
+//         margin-bottom: 10px;
+//       }
+//     }
+//     .exprince{
+//       display: flex;
+//       justify-content: space-between;
+//     }
+//     .projects{
+//       .text{
+//         grid-gap: 10px;
+//         display: grid;
+//         grid-template-columns: 80px auto;
+//       }
+//     }
+//   }
+  
+// }
+%yellowcolor
+  color: $maincolor
+
+.title
+  @extend %yellowcolor
+  font-size: 30px
+
+  .container
+    .content
+      
+
 </style>

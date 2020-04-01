@@ -21,8 +21,8 @@ const vueConfig = {
   },
   css: {
     loaderOptions: {
-      scss: {
-        prependData: '@import "@/styles/config.scss";'
+      sass: {
+        prependData: '@import "@/styles/config.sass";'
       }
     }
   },
